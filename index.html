@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" />
+        <script type='text/javascript' src='script.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <nav class="transition navBar">
+            <div>
+                <a href="#"><img class="topImg" src="images/petitlogoakiranoir.png"></a>
+                <a href="#"><img class="topImg topImgR transition" src="images/petitlogoakirarouge.png"></a>
+            </div>
+            <a href="#pageCquoi" class="transition btn">Akira</a>
+            <a href="#pageAuteur" class="transition btn">Auteur</a>
+            <div href="" class="transition btn btnScroll" id="btnScroll">Personnages
+                <div class="dropDownCache" id="dropDown">
+                    <a href="#cardPerso" id="btnKaneda" class="hiddenbtn transition">Kaneda</a>
+                    <a href="#cardPerso" id="btnTetsuo" class="hiddenbtn transition">Tetsuo</a>
+                    <a href="#cardPerso" id="btnKei"class="hiddenbtn transition">Kei</a>
+                    <a href="#cardPerso" id="btnAkira"class="hiddenbtn transition">Akira</a>
+                </div>
+            </div>
+            
+                <a class="transition  burger" id="btnburger" ><i class="fa fa-bars"></i></a>
+                <div class="burgerCaché" id="burgerhidden">
+                    <a href="#pageCquoi" class="burgerMenu"> Akira </a>
+                    <a href="#pageAuteur" class="burgerMenu"> Auteur </a>
+                    <a class="burgerMenu"id="btnPersoBurger" > Personnages </a>
+                    <div class="burgerSub" id="BurgerSubMenu">
+                        <a href="#cardPerso"id="btnKaneda2"class="burgerMenu burgerSubMenu">Kaneda </a>
+                        <a href="#cardPerso"id="btnTetsuo2"class="burgerMenu burgerSubMenu">Tetsuo </a>
+                        <a href="#cardPerso"id="btnKei2"   class="burgerMenu burgerSubMenu">Kei    </a>
+                        <a href="#cardPerso"id="btnAkira2" class="burgerMenu burgerSubMenu">Akira  </a>
+                    </div>
+                </div>
+            
+            
+            </nav>
+        <div class="homePage">
+            <img class="akiraLogoHP" src="images/akira-2.png">
+        </div>
+        <main class="page">
+            <div id="pageCquoi"class="card card1">
+                <img class="imgCard0 imgCard1" src="images/137.jpg">
+                <img class="imgCardMobile" src="images/akira.tt.jpg">
+                <div class="textCard textCard1"> 
+                    <h1>Akira c'est quoi ?</h1>
+                    <p>*Akira* est un manga seinen emblématique écrit et illustré par Katsuhiro Otomo, publié pour la première fois en 1982. Se déroulant dans un futur dystopique post-apocalyptique, il explore des thèmes profonds tels que la technologie, la politique, le militarisme et la psyché humaine. L'intrigue se concentre sur Kaneda, chef d’un gang de motards, et son ami Tetsuo, qui développe des pouvoirs psychiques dévastateurs après un accident. L'œuvre, saluée pour son récit complexe et ses visuels détaillés, est également célèbre pour son adaptation en film d'animation en 1988, un jalon de la culture cyberpunk et du cinéma d'animation japonais. *Akira* a eu une influence considérable sur de nombreuses œuvres de science-fiction et reste un chef-d'œuvre incontournable du manga seinen.</p>
+                </div>
+            </div>
+            <div class="card card2" id="pageAuteur">
+                <img class="imgCardMobile" src="images/akira.tt2.jpg">
+                <div class="textCard textCard2">
+                    <h1>Katsuhiro ce GOAT</h1>
+                    <p>Katsuhiro Otomo est un mangaka, réalisateur et scénariste japonais, mondialement connu pour Akira. Né le 14 avril 1954 à Tome, dans la préfecture de Miyagi, Otomo a révolutionné le manga et l'animation japonaise avec son style novateur, mêlant un réalisme visuel minutieux à des récits futuristes et dystopiques. "Akira", publié entre 1982 et 1990, est une fresque épique se déroulant dans un Tokyo post-apocalyptique, marquée par ses thèmes de la violence, du pouvoir et de la technologie. Son adaptation en film d'animation en 1988, qu'il a également réalisée, a marqué l'histoire de l'animation, en introduisant une complexité narrative et une qualité visuelle rarement vues à l'époque. Otomo a influencé une génération entière de créateurs, au Japon et à l’international, et continue d’être une figure clé dans le monde de la science-fiction et de la bande dessinée.</p>
+                </div>
+                <img class="imgCard0 imgCard2" src="images/151.jpg">
+            </div>
+            <div class="card Kaneda" id="cardPerso">
+                <a class="prev transition" id="btnPrec">❮</a>
+                <div class="mobileView">
+                    <img class="imgCard imgCache cartePerso" id="imgKaneda"src="images/060.jpg">
+                    <img class="imgCardMobile2 MobileKaneda cartePerso" id="imgKanedaMobile"src="images/Kanedaimg.jpg">
+                    <img class="imgCard imgCache cartePerso" id="imgTetsuo"src="images/076.jpg">
+                    <img class="imgCardMobile2 MobileTetsuo cartePerso" id="imgTetsuoMobile"src="images/tetuo12.jpg">
+                    <img class="imgCard imgCache cartePerso" id="imgKei"src="images/075.jpg">
+                    <img class="imgCardMobile2 MobileKei cartePerso" id="imgKeiMobile"src="images/keimobile.jpg">
+                    <img class="imgCard imgCache cartePerso" id="imgAkira"src="images/167.jpg">
+                    <img class="imgCardMobile2 MobileAkira cartePerso" id="imgAkiraMobile"src="images/akia12.jpg">
+                    <div id="texteKaneda" class="cartePerso">
+                        <h1>Kaneda</h1>
+                        <p>**Kaneda** est un personnage central qui incarne l'esprit rebelle et aventureux de la jeunesse dans un Tokyo post-apocalyptique. Chef d'un gang de motards, il est connu pour son attitude téméraire, son blouson rouge emblématique, et sa moto futuriste. Son lien avec **Tetsuo**, son ami d'enfance qui devient l'antagoniste principal après avoir acquis des pouvoirs psychiques incontrôlables, est au cœur de l'intrigue. Bien qu'au départ insouciant et peu soucieux des conséquences, Kaneda est entraîné dans un conflit complexe entre gouvernement, militaires et forces surnaturelles liées à Akira, une entité mystérieuse. Au fil de l’histoire, Kaneda évolue : il passe d’un simple délinquant à un leader, déterminé à protéger ceux qu’il aime, tout en faisant face à la destruction et à la folie qui envahissent Neo-Tokyo. Sa loyauté envers ses amis et son refus de se laisser dominer par la peur en font un symbole de résistance dans un monde en pleine désintégration.</p>
+                    </div>
+                    <div id="texteTetsuo" class=" cartePerso texteCache">
+                        <h1>Tetsuo</h1>
+                        <p>**Tetsuo Shima** est un personnage central dont l'évolution tragique est au cœur de l'intrigue. Ami d'enfance de Kaneda, il commence l'histoire comme un membre vulnérable et complexe du gang de motards, souvent dans l'ombre de Kaneda. Après un accident qui le met en contact avec des forces psychiques liées à Akira, Tetsuo développe des pouvoirs surhumains qu'il peine à contrôler. Ces capacités provoquent en lui un profond sentiment de revanche, exacerbant son insécurité et sa soif de reconnaissance. Au fur et à mesure que ses pouvoirs grandissent, ils le corrompent, le transformant en une figure quasi divine, mais aussi destructrice et instable. Tetsuo devient à la fois victime de ces forces qu’il ne comprend pas et responsable de la destruction massive qui en résulte. Sa quête pour se libérer de son passé et de l'influence de Kaneda tout en maîtrisant ses nouvelles capacités le pousse à des actions de plus en plus violentes, faisant de lui un personnage tragique déchiré entre sa soif de pouvoir et son incapacité à contrôler sa propre humanité.</p>
+                    </div>
+                    <div id="texteKei" class="cartePerso texteCache">
+                        <h1>Kei</h1>
+                        <p> **Kei** est un personnage crucial, bien qu’au départ plus discrète. Membre d’un groupe révolutionnaire luttant contre le gouvernement oppressif de Neo-Tokyo, elle est d’abord introduite comme une figure mystérieuse qui capte rapidement l’attention de Kaneda. Bien que leur relation évolue, Kei ne se réduit jamais à un simple intérêt romantique. C'est une combattante courageuse et déterminée, profondément impliquée dans la résistance contre les forces politiques et militaires qui cherchent à exploiter le pouvoir d'Akira. Au fil de l'histoire, elle devient un personnage clé, servant de médium pour canaliser des pouvoirs psychiques qui la lient à Akira et aux événements surnaturels qui secouent la ville. Sa loyauté envers la cause révolutionnaire, son courage face aux dangers, et sa capacité à garder son sang-froid, font d’elle un pilier de la résistance. Kei incarne l'aspect humain et moral de l'histoire, luttant non seulement pour la survie, mais aussi pour une justice plus grande dans un monde chaotique.</p>
+                    </div>
+                    <div id="texteAkira" class="cartePerso texteCache">
+                        <h1>Akira</h1>
+                        <p>Akira est un personnage à la fois mystérieux et central, bien qu'il apparaisse rarement en personne. Enfant sujet à des expériences scientifiques, Akira est devenu un être doté de pouvoirs psychiques presque divins, capables de détruire des villes entières, comme il l'a fait avec Tokyo avant le début de l'histoire. Son pouvoir dépasse l'entendement humain, le rendant plus une force cosmique qu'un simple individu. Bien que physiquement présent sous la forme d’un enfant aux allures innocentes, Akira représente une menace perpétuelle pour le monde, car son potentiel destructeur reste incontrôlable. Tout au long du manga, il est au centre des convoitises et des manipulations politiques, militaires et scientifiques, chacun cherchant à utiliser ou à comprendre sa puissance. Pourtant, malgré cette dimension apocalyptique, Akira demeure un personnage énigmatique et silencieux, un symbole de l’imprévisibilité de l’évolution humaine et des dangers inhérents à l’abus de pouvoir. Son existence influence profondément l'intrigue et les destins de personnages comme Tetsuo et Kaneda, tout en incarnant la frontière entre l’humain et le divin.</p>
+                    </div>
+                </div>
+                <a class="next transition" id="btnNext">❯</a>
+            </div>
+        </main>
+        <div class="footer">
+            <p>good for health, bad for education.</p>
+            <a href=""><img class="imgFooter"src="Images/footer.png"></a>
+        </div>
+    </body>
+</html>
