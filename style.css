@@ -191,16 +191,19 @@ body{
 }
 .prev{
     margin: auto 0;
-    padding: 0 10px 0 5px;
+    padding: 0 10px 5px 5px;
     font-size: 50px;
     cursor: pointer;
+    line-height: 50px;
+    height: 50px;
     border-radius: 5px;
 }
 .next{
     margin: auto 0 auto auto;
     float: right;
-    padding: 0 10px 0 5px;
+    padding: 0 10px 5px 5px;
     border-radius: 5px;
+    line-height: 50px;
     font-size: 50px;
     cursor:pointer;
 }
