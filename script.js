@@ -20,17 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
         
     window.onclick = function(event) {
-        if (!event.target.matches('.btnScroll')) {
-            var dropdowns = document.getElementById("dropDown");
-              
-            if (dropdowns.classList.contains('dropDown2')) {
-                  dropdowns.classList.remove('dropDown2');
-            }
-        }
-    }
-
-    window.onclick = function(event2) {
-    if(!event2.target.matches('.burgerCaché' && '.burger')) {
+    if(!event.target.matches('.burgerCaché' && '.burger')) {
         var dropdownsburger = document.getElementById("burgerhidden")
 
             if(dropdownsburger.classList.contains('burgerMontré') && !event.target.matches('#btnPersoBurger')){
@@ -38,8 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
             dropdownsburger.classList.remove('burgerMontré');
             document.getElementById("BurgerSubMenu").classList.remove("displayy");
         }
-    }
-    }
+        if (!event.target.matches('.btnScroll')) {
+            var dropdowns = document.getElementById("dropDown");
+            if (dropdowns.classList.contains('dropDown2')) {
+                  dropdowns.classList.remove('dropDown2');
+            }
+        }
+    }}
     
 
     let i = 1;
