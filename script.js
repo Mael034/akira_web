@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("btnScroll").addEventListener("click", myFunction);
         function myFunction(){
             document.getElementById("dropDown").classList.toggle("dropDown2");
-            console.log("test");
         }
 
     document.getElementById("btnburger").addEventListener("click", myFunction2);
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("btnPersoBurger").addEventListener("click",function(){
         document.getElementById("BurgerSubMenu").classList.toggle("displayy");
-        console.log("hello");
     })
         
     window.onclick = function(event) {
